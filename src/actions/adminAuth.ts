@@ -7,7 +7,15 @@ export async function login(formData: FormData) {
   const username = formData.get('username') as string;
   const password = formData.get('password') as string;
 
-  if (username === 'ADMIN1' && password === 'AURA2') {
+  const validUsername = process.env.ADMIN_USERNAME;
+  const validPassword = process.env.ADMIN_PASSWORD;
+
+  // Prevent login if env variables are not set properly
+  if (!validUsername || !validPassword) {
+    return { success: false, error: 'Configuração de segurança pendente' };
+  }
+
+  if (username === validUsername && password === validPassword) {
     const cookieStore = await cookies();
     cookieStore.set('admin_session', 'authenticated', {
       httpOnly: true,
