@@ -108,8 +108,8 @@ export default function OnboardingPage() {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="font-display text-5xl xl:text-6xl font-bold leading-[1.1] tracking-tight text-white drop-shadow-[0_5px_5px_rgba(0,0,0,0.8)]"
           >
-            O primeiro passo <br/> para a sua nova <br/>
-            <span className="text-zinc-300">presença digital.</span>
+            Tudo pronto para <br/>
+            <span className="text-zinc-300">começarmos o seu projeto.</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -117,7 +117,7 @@ export default function OnboardingPage() {
             transition={{ duration: 1, delay: 0.6 }}
             className="text-zinc-200 max-w-sm text-lg font-medium drop-shadow-[0_3px_3px_rgba(0,0,0,0.8)]"
           >
-            Nós unimos estética de ponta a engenharia de precisão para construir experiências inesquecíveis.
+            Para que o resultado seja perfeito, precisamos conhecer um pouco mais sobre o seu negócio. Reserve alguns minutos para nos dar esses detalhes.
           </motion.p>
         </div>
       </div>
@@ -136,11 +136,11 @@ export default function OnboardingPage() {
               <span className="text-xs font-bold tracking-widest uppercase text-zinc-400 px-2">Bem-vindo</span>
             </div>
             <h1 className="font-display text-4xl font-bold tracking-tight leading-tight">
-              O primeiro passo <br/> para a sua nova <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-100 to-zinc-500">presença digital.</span>
+              Tudo pronto para <br/>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-100 to-zinc-500">começarmos o seu projeto.</span>
             </h1>
             <p className="text-zinc-400 text-base leading-relaxed">
-              Preencha os dados abaixo para darmos início ao seu projeto com a nossa equipe.
+              Para que o resultado seja perfeito, precisamos conhecer um pouco mais sobre o seu negócio. Reserve alguns minutos para nos dar esses detalhes.
             </p>
           </div>
 
