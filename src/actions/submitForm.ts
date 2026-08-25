@@ -31,10 +31,7 @@ export async function submitClientIntake(formData: FormData) {
       materialsLink: formData.getAll('materialsLink').map(link => link.toString().trim()).filter(Boolean).join('\n'),
     };
 
-    // Validation
-    if (!data.companyName || !data.contactName || !data.email || !data.whatsapp || !data.materialsLink) {
-      return { success: false, error: 'Por favor, preencha todos os campos obrigatórios.' };
-    }
+    // Validation removed - all fields are optional
 
     // Connect to Neon Database
     if (!process.env.DATABASE_URL) {

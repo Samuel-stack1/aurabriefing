@@ -189,10 +189,10 @@ export default function OnboardingPage() {
                     <h3 className="font-display text-2xl font-semibold tracking-tight">A Empresa</h3>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
-                    <MinimalInput label="Nome da Empresa *" id="companyName" required />
-                    <MinimalInput label="Nome do Responsável *" id="contactName" required />
-                    <MinimalInput label="WhatsApp *" id="whatsapp" required />
-                    <MinimalInput label="Email Corporativo *" id="email" type="email" required />
+                    <MinimalInput label="Nome da Empresa" id="companyName" />
+                    <MinimalInput label="Nome do Responsável" id="contactName" />
+                    <MinimalInput label="WhatsApp" id="whatsapp" />
+                    <MinimalInput label="Email Corporativo" id="email" type="email" />
                   </div>
                 </motion.section>
 
@@ -239,8 +239,8 @@ export default function OnboardingPage() {
                           exit={{ opacity: 0, height: 0 }}
                           className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4"
                         >
-                          <MinimalInput label="Qual é o domínio? *" id="currentDomain" required />
-                          <MinimalInput label="Onde está registrado? *" id="domainRegistrar" required />
+                          <MinimalInput label="Qual é o domínio?" id="currentDomain" />
+                          <MinimalInput label="Onde está registrado?" id="domainRegistrar" />
                         </motion.div>
                       )}
 
@@ -252,7 +252,7 @@ export default function OnboardingPage() {
                           exit={{ opacity: 0, height: 0 }}
                           className="pt-2"
                         >
-                          <MinimalInput label="Qual domínio você deseja registrar? *" id="desiredDomain" required />
+                          <MinimalInput label="Qual domínio você gostaria de ter?" id="desiredDomain" />
                         </motion.div>
                       )}
                     </AnimatePresence>
@@ -320,11 +320,10 @@ export default function OnboardingPage() {
                       <div key={`material-link-${index}`} className="flex items-end space-x-3">
                         <div className="flex-1">
                           <MinimalInput 
-                            label={`Link da Pasta de Materiais ${index > 0 ? index + 1 : ''} ${index === 0 ? '*' : ''}`} 
+                            label={`Link da Pasta de Materiais ${index > 0 ? index + 1 : ''}`} 
                             id={`materialsLink_${index}`} 
                             name="materialsLink" 
                             type="url" 
-                            required={index === 0} 
                           />
                         </div>
                         {index === materialsLinksCount - 1 && (
